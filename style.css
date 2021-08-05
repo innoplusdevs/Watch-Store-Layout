@@ -119,6 +119,12 @@ h1 {
   width: 100%;
 }
 
+.InputSearch::placeholder {
+  letter-spacing: 1.5px;
+  color: rgb(177, 167, 167);
+  padding-left: 1.4rem;
+}
+
 .SubmitSearch {
   color: white;
   background: black;
@@ -130,4 +136,11 @@ h1 {
   top: 0;
   bottom: 0;
   margin: 5px 5px 5px 0;
+}
+
+.ImageSearch {
+  position: absolute;
+  fill: rgb(173, 162, 162);
+  left: 1rem;
+  top: 1.2rem;
 }
