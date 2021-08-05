@@ -1,0 +1,133 @@
+@font-face {
+  font-family: "EuclidCircularA";
+  src: url("assets/fonts/EuclidCircularA-Light.ttf");
+}
+
+body {
+  font-family: "EuclidCircularA";
+}
+
+nav {
+  margin: 10px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+}
+
+.NavLinks {
+  display: flex;
+  justify-content: space-between;
+}
+
+.NavButtons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.Links {
+  outline: none;
+  font-size: 0.9em;
+  text-decoration: none;
+  color: rgb(177, 166, 166);
+}
+
+.Links:active,
+.SubmitSearch:active {
+  transform: scale(0.9);
+}
+
+.NavLinks .Links:hover {
+  color: black;
+}
+
+.NavButtons .Links {
+  font-size: 0.75em;
+  color: black;
+  padding: 0.7rem 1rem;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+#register-button {
+  margin-left: 1rem;
+}
+
+.NavButtons .Links:hover {
+  background-color: black;
+  color: white;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1.5rem;
+}
+
+h1 {
+  font-size: 3em;
+  padding: 0;
+  margin: 0;
+  line-height: 1.7;
+}
+
+.DescriptionText {
+  line-height: 2.4;
+}
+
+.HeroPresentation {
+  padding: 10px;
+}
+
+.HeroImages {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.Phones {
+  width: 50%;
+  position: absolute;
+}
+
+#phone-1 {
+  z-index: 2;
+  transform: rotate(-10deg);
+  left: 0;
+}
+
+#phone-2 {
+  z-index: 1;
+  right: 18%;
+  transform: rotate(10deg);
+}
+
+.SearchForm {
+  margin-top: 6rem;
+  box-sizing: border-box;
+  position: relative;
+  box-shadow: 0px 0px 25px 10px rgb(0 0 0 / 20%);
+  border-radius: 10px;
+}
+
+.InputSearch {
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  border-radius: 15px;
+  padding: 1.4rem 8rem 1.4rem 1.4rem;
+  width: 100%;
+}
+
+.SubmitSearch {
+  color: white;
+  background: black;
+  border: none;
+  border-radius: 8px;
+  padding: 0.8rem 2rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: 5px 5px 5px 0;
+}
